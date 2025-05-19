@@ -1,0 +1,21 @@
+version: "3.1"
+
+stories:
+- story: Consulta aluno
+  steps:
+  - intent: consultar_aluno
+  - action: utter_consulta_aluno
+
+- story: Cadastro básico
+  steps:
+  - intent: cadastro_aluno
+  - action: utter_campos_obrigatorios
+  - intent: fornecer_dados
+  - action: action_confirma_cadastro
+
+- story: Ocorrências
+  steps:
+  - intent: registrar_ocorrencia
+  - action: utter_formulario_ocorrencia
+  - intent: preencher_ocorrencia
+  - action: action_registrar_ocorrencia

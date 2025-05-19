@@ -1,0 +1,38 @@
+version: "3.1"
+
+intents:
+  - consultar_aluno
+  - cadastro_aluno
+  - cadastro_empresa_aluno
+  - registrar_ocorrencia
+  - filtrar_ocorrencias
+  - relatorio_matricula
+  - atualizar_dados
+  - sobre_aluno
+  - upload_foto
+  - greet
+  - ajuda
+
+responses:
+  utter_bem_vindo:
+    - text: "Bem-vindo ao sistema de gestão escolar! Como posso ajudar?"
+  
+  utter_consulta_aluno:
+    - text: "Para consultar um aluno, você precisa do ID ou nome completo. Digite um dos dados:"
+  
+  utter_campos_obrigatorios:
+    - text: "Campos obrigatórios: Nome, Sobrenome, Cidade e Idade. Campos opcionais marcados com *"
+  
+  utter_formulario_ocorrencia:
+    - text: "Para registrar ocorrência, informe: Aluno, Data, Tipo e Descrição. Data no formato DD/MM/AAAA"
+  
+  utter_ajuda:
+    - text: "Posso ajudar com: Cadastros, Consultas, Ocorrências e Relatórios. O que precisa?"
+
+actions:
+  - action_confirma_cadastro
+  - action_registrar_ocorrencia
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

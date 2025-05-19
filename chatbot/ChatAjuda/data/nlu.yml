@@ -1,0 +1,73 @@
+version: "3.1"
+
+nlu:
+- intent: consultar_aluno
+  examples: |
+    - Quero consultar um aluno
+    - Como buscar informações de um aluno?
+    - Preciso ver os dados de um aluno cadastrado
+    - Consultar aluno por ID
+    - Buscar aluno pelo nome
+
+- intent: cadastro_aluno
+  examples: |
+    - Como cadastrar um novo aluno?
+    - Quais campos são obrigatórios no cadastro?
+    - Preciso registrar um novo aluno
+    - Formulário de cadastro de aluno
+    - Campos do formulário de aluno
+
+- intent: cadastro_empresa_aluno
+  examples: |
+    - O aluno é empregado?
+    - Como cadastrar a empresa onde o aluno trabalha?
+    - O aluno trabalha em qual empresa?
+    - Campos de informação profissional do aluno
+
+- intent: registrar_ocorrencia
+  examples: |
+    - Como registrar uma ocorrência?
+    - Quero adicionar uma nova ocorrência
+    - Cadastro de ocorrência escolar
+    - Registrar problema do aluno
+    - Adicionar ocorrência na ficha
+
+- intent: filtrar_ocorrencias
+  examples: |
+    - Como filtrar ocorrências?
+    - Ver ocorrências por turma
+    - Listar ocorrências em andamento
+    - Filtrar por período escolar
+    - Mostrar ocorrências concluídas
+
+- intent: relatorio_matricula
+  examples: |
+    - Gerar relatório de matrículas
+    - Listar alunos por turma
+    - Ver alunos do período da manhã
+    - Relatório de alunos matriculados
+    - Quantos alunos tem na turma A?
+
+- intent: atualizar_dados
+  examples: |
+    - Como atualizar dados do aluno?
+    - Alterar endereço do aluno
+    - Mudar informação de emprego
+    - Atualizar foto do aluno
+    - Modificar dados cadastrais
+
+- intent: sobre_aluno
+  examples: |
+    - Onde colocar observações sobre o aluno?
+    - Campo de informações adicionais
+    - Seção sobre o aluno
+    - Comentários gerais do aluno
+    - Anotações complementares
+
+- intent: upload_foto
+  examples: |
+    - Como enviar a foto do aluno?
+    - Formatos aceitos para foto
+    - Tamanho máximo da foto
+    - Upload de imagem do aluno
+    - Anexar foto ao cadastro
